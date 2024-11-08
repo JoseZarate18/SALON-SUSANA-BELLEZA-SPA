@@ -265,7 +265,36 @@ footer {
     .redes-sociales a {
         font-size: 25px; /* Cambiar el tamaño del icono para móviles */
     }
+
+    .imagen-galeria {
+        width: 100%; /* Las imágenes de la galería se ajustan al 100% del ancho */
+    }
+
+    .galeria-contenido {
+        flex-direction: column; /* Las imágenes de la galería se apilan verticalmente */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .seccion-titulo {
+        font-size: 1.5rem; /* Ajusta el tamaño del título en secciones */
+    }
+
+    header .salon-titulo {
+        font-size: 1.5rem; /* Ajusta el tamaño del título del salón */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia la dirección del menú para pantallas pequeñas */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduce el espacio entre los botones del menú */
+    }
+
+    footer {
+        position: static; /* Hace que el pie de página fluya con el contenido */
+        padding: 10px; /* Ajusta el espaciado del pie de página */
+    }
 }
-
-
 
