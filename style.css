@@ -128,30 +128,41 @@ header {
     margin-top: 10px;
 }
 
-/* Menú de navegación con botones rosados */
-nav ul {
-    list-style: none;
+/* Estilo para los botones de navegación */
+.menu ul {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: center; /* Centra los botones horizontalmente */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0;
 }
 
-nav ul li {
-    margin: 0 10px;
+.menu li {
+    margin: 0 10px; /* Espaciado entre botones */
 }
 
-nav ul li button {
-    background-color: var(--color-primario);
-    color: white;
+.menu button {
+    background-color: #f2f2f2; /* Color de fondo */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    font-size: 1rem;
 }
 
-nav ul li button:hover {
-    background-color: var(--color-primario-hover);
+.menu button:hover {
+    background-color: #ccc; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para las redes sociales */
+.redes-sociales {
+    display: flex;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    gap: 15px; /* Espaciado entre los íconos */
+    padding: 10px 0;
+}
+
+.redes-sociales a img {
+    width: 40px; /* Tamaño de los íconos */
+    height: auto;
 }
 
 /* Secciones generales */
