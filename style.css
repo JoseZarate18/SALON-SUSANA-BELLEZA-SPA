@@ -306,4 +306,31 @@ footer {
         padding: 10px; /* Reducir el padding del pie de página */
     }
 }
+/* Botones en fila */
+nav ul {
+    display: flex;
+    flex-wrap: nowrap; /* Evita que los botones pasen a una nueva fila */
+    justify-content: center;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Imágenes adaptadas al ancho del dispositivo */
+.imagen-galeria,
+.gerente-imagen img {
+    max-width: 100%; /* Máximo del 100% del contenedor */
+    height: auto;
+}
+
+/* Redes sociales en una sola fila */
+footer .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre los íconos */
+    flex-wrap: nowrap;
+}
+
+footer .redes-sociales img {
+    width: 30px; /* Tamaño uniforme para los íconos */
+    height: auto;
+}
 
