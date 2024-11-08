@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salón de Belleza Susana - Cuida tu imagen con servicios de lujo. Ofrecemos cortes de cabello, peinados, manicure, pedicure y más.">
+    <meta name="keywords" content="salón de belleza, cortes de cabello, peinados, manicure, pedicure, belleza, cuidado personal">
+    <meta name="author" content="Salón de Belleza Susana">
+    <title>Salón de Belleza Susana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Encabezado con logo y navegación -->
+    <header>
+        <div class="logo">
+            <h1 class="salon-titulo">SALÓN SUSANA BELLEZA & SPA</h1>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><button onclick="mostrarSeccion('galeria')">Galería</button></li>
+                <li><button onclick="mostrarSeccion('ubicacion')">Ubicación</button></li>
+                <li><button onclick="mostrarSeccion('consejos')">Consejos</button></li>
+                <li><button onclick="mostrarSeccion('promociones')">Promociones</button></li>
+                <li><button onclick="mostrarSeccion('gerente')">Gerente</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Galería de Imágenes -->
+    <section id="galeria" class="seccion">
+        <h2 class="seccion-titulo">Servicios</h2>
+        <article class="galeria-contenido">
+            <div class="imagen-item">
+                <img src="img/ft 1.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <img src="img/ft 2.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <img src="img/ft 5.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <img src="img/ft 6.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <img src="img/file (1).jpg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <img src="img/file.jpg" alt="Corte de cabello moderno" class="imagen-galeria">
+                <p>Maquillajes para todo tipo de eventos como fiestas, desfiles, danzas folklorica y hasta disfraces.</p>
+            </div>
+            <div class="imagen-item">
+                <img src="img/p 1.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
+                <img src="img/p 2.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
+                <img src="img/p 3.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
+                <p>Peinados para ocasiones especiales</p>
+            </div>
+            <div class="imagen-item">
+                <img src="img/m1.jpeg" alt="Manicure y pedicure" class="imagen-galeria">
+                <p>Manicure y pedicure profesional</p>
+            </div>
+          </article>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="seccion">
+        <h2 class="seccion-titulo">Ubicación</h2>
+        <p>Visítanos en la comunidad de San Germán, frente a la Unidad Educativa Don Bosco 1 Nivel Primario</p>
+        <div class="mapa">
+            <img src="img/titulo.jpeg" alt="mapa">
+        </div>
+    </section>
+
+    <!-- Sección de Consejos de Cuidado Personal -->
+    <section id="consejos" class="seccion">
+        <h2 class="seccion-titulo">Cuidado Personal</h2>
+        <article>
+            <ul class="lista-consejos">
+                <li>Hidrata tu piel con cremas sin alcohol.</li>
+                <li>Usa protector solar con un mínimo de SPF 30 diariamente.</li>
+                <li>Aplica mascarillas hidratantes para tu cabello cada semana.</li>
+                <li>Evita el uso de calor extremo en tu cabello, como planchas y secadores.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Sección de Promociones -->
+    <section id="promociones" class="seccion">
+        <h2 class="seccion-titulo">Promociones</h2>
+        <div id="promo" class="promo-contenido"></div>
+        <button class="boton-promocion" onclick="mostrarPromocion()">Ver Promociones</button>
+    </section>
+
+    <!-- Sección de Gerente -->
+    <section id="gerente" class="seccion">
+        <h2 class="seccion-titulo">Gerente del Salón</h2>
+        <div class="gerente-contenedor">
+            <article class="gerente-info">
+                <p>Susana Martínez es la gerente y fundadora del Salón de Belleza Susana.</p>
+                <p>Con más de años de experiencia en el sector de la belleza, se ha destacado por brindar servicios personalizados y de calidad a cada cliente.</p>
+            </article>
+            <div class="gerente-imagen">
+                <img src="img/gerente.jpeg" alt="Gerente del salón Susana Martínez">
+            </div>
+        </div>
+    </section>    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="redes-sociales">
+            <a href="https://wa.me/59167778491" target="_blank" class="whatsapp">
+                <img src="img/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="https://www.facebook.com/Susan - Salón" target="_blank" class="facebook">
+                <img src="img/communication.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@susanaecheverriav0" target="_blank" class="tiktok">
+                <img src="img/social-media.png" alt="TikTok">
+            </a>
+            <a href="https://www.instagram.com/salon_de_belleza_susana" target="_blank" class="instagram">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    
+    <!-- Archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
