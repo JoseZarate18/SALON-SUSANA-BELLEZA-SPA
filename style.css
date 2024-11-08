@@ -266,3 +266,44 @@ footer {
         font-size: 25px; /* Cambiar el tamaño del icono para móviles */
     }
 }
+/* Estilos para pantallas móviles */
+@media screen and (max-width: 600px) {
+    header .salon-titulo {
+        font-size: 2.5em; /* Ajustar el tamaño de la fuente del título */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambiar la dirección del menú a vertical */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reducir el margen entre los elementos */
+    }
+
+    nav ul li button {
+        padding: 8px 12px; /* Reducir el tamaño del botón */
+        font-size: 0.9rem; /* Disminuir el tamaño de la fuente */
+    }
+
+    .imagen-galeria {
+        width: 100px; /* Reducir el tamaño de las imágenes de la galería */
+    }
+
+    .gerente-imagen img {
+        max-width: 150px; /* Ajustar el tamaño de la imagen */
+    }
+
+    .boton-promocion {
+        padding: 8px 15px; /* Reducir el tamaño del botón de promoción */
+    }
+
+    .seccion-titulo {
+        font-size: 1.5rem; /* Ajustar el tamaño de los títulos */
+    }
+
+    footer {
+        padding: 10px; /* Reducir el padding del pie de página */
+    }
+}
+
