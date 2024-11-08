@@ -17,18 +17,3 @@ function mostrarPromocion() {
         <p>Queridas clientas hoy estaremos con descuento menos el 30% en los alizados.</p>
     `;
 }
-<script>
-function mostrarSeccion(seccionId) {
-    // Oculta todas las secciones
-    document.querySelectorAll('.seccion').forEach(seccion => {
-        seccion.style.display = 'none';
-    });
-
-    // Muestra la sección seleccionada
-    document.getElementById(seccionId).style.display = 'block';
-}
-
-function mostrarPromocion() {
-    document.getElementById('promo').innerText = '¡Promociones especiales disponibles solo esta semana!';
-}
-</script>
