@@ -344,4 +344,21 @@ footer .redes-sociales img {
     width: 30px; /* Tamaño uniforme para los íconos */
     height: auto;
 }
+.redes-sociales {
+    display: flex;
+    justify-content: center; /* Centra los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    padding: 10px 0;
+}
+
+.redes-sociales a img {
+    width: 40px; /* Ajusta el tamaño de los íconos según prefieras */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
 
