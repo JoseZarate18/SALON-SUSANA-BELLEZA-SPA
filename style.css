@@ -1,242 +1,74 @@
-/* Estilos generales */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: black; /* Color del cuerpo del texto */
-    margin: 0;
-    padding: 0;
-    background-color: #000000; /* Fondo negro */
-}
-
-/* Encabezado */
-header {
-    background-color: #a09d9d; /* Color plomo para el encabezado */
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-header .salon-titulo {
-    font-size: 5em;
-    margin: 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li button {
-    background-color: #eb1c50; /* Botones rosados */
-    color: white;
-    border: #000000;
-    margin: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-nav ul li button:hover {
-    background-color: #eb1c50; /* Color más oscuro al pasar el mouse */
-}
-
-/* Secciones */
-.seccion {
-    padding: 20px;
-    margin: 20px 0;
-    color: white; /* Para que el texto en las secciones sea visible sobre el fondo negro */
-}
-
-/* Galería */
-.galeria-contenido {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.imagen-item {
-    margin: 10px;
-}
-
-.imagen-galeria {
-    width: 150px; /* Tamaño más pequeño para las imágenes de la galería */
-    height: auto;
-    border-radius: 8px;
-    border: 2px solid #fff;
-}
-
-/* Pie de página */
-footer {
-    background-color: #eb1c50; /* Color rosado para el pie de página */
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-footer .redes-sociales a img {
-    width: 30px;
-    margin: 0 10px;
-}
-
-/* Sección de Gerente */
-.gerente-imagen img {
-    width: 200px; /* Ajusta este valor según el tamaño deseado */
-    height: auto; /* Mantener las proporciones de la imagen */
-    border-radius: 8px; /* Borde ligeramente redondeado, cámbialo si lo prefieres */
-    display: block; /* Para que la imagen no tenga espacios laterales */
-    margin: 2px ; /* Centrar la imagen dentro del contenedor */
-}
-/* Definición de variables de color para personalización rápida */
-:root {
-    --color-primario: #f02260;
-    --color-primario-hover: #ff1493;
-    --color-fondo: #000000;
-    --color-texto: #ffffff;
-    --color-titulo: #8f8f8f;
-}
-
-* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    line-height: 1.6;
-}
-
-/* Encabezado con logo y título del salón */
 header {
+    background: #000000;
+    color: #dd0e29;
+    padding: 1rem;
     text-align: center;
-    background-color: var(--color-titulo);
-    padding: 20px 0;
 }
 
-.logo-img {
-    width: 100px;
-}
-
-.salon-titulo {
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-/* Menú de navegación con botones rosados */
 nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    list-style: none;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
-nav ul li button {
-    background-color: var(--color-primario);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1rem;
+nav ul li a {
+    color: #f7135f;
+    text-decoration: none;
 }
 
-nav ul li button:hover {
-    background-color: var(--color-primario-hover);
-}
-
-/* Secciones generales */
-.seccion {
-    display: none;
-    padding: 20px;
+.hero {
+    background: url(img/titulo.jpeg) no-repeat center center/cover;
+    color: #ffffff;
+    padding: 5rem 0;
     text-align: center;
 }
 
-.seccion-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    color: var(--color-primario);
+section {
+    padding: 2rem;
+    text-align: center;
+    color: #000000;
 }
 
-.galeria-contenido, .lista-consejos {
+.productos-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-#gerente {
-    margin: 20px;
-}
-
-#gerente .gerente-contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px; /* Espacio entre el texto y la imagen */
-}
-
-#gerente .gerente-info {
-    flex: 1; /* Ocupa todo el ancho disponible */
-}
-
-#gerente .gerente-imagen img {
-    max-width: 300px; /* Ajusta el tamaño de la imagen */
-    height: auto;
-    border-radius: 10px; /* Bordes redondeados opcionales */
-}
-
-
-/* Estilos para las imágenes de la galería */
-.imagen-item {
-    margin: 10px;
-}
-
-.imagen-galeria {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Estilo para el mapa de Google */
-.mapa iframe {
-    width: 100%;
-    height: 300px;
-    border: 0;
-}
-
-/* Botón de promociones */
-.boton-promocion {
-    background-color: var(--color-primario);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-.boton-promocion:hover {
-    background-color: var(--color-primario-hover);
-}
-
-/* Pie de página */
-footer {
-    background-color: var(--color-primario);
+.producto {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #f7135f;
+    border-radius: 5px;
+    max-width: 300px;
     text-align: center;
-    padding: 3px;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
 
 .redes-sociales a {
     margin: 0 10px; /* Espacio entre los íconos */
@@ -246,55 +78,3 @@ footer {
     width: 30px; /* Ajusta el tamaño de los íconos */
     height: auto;
 }
-
-/* Estilos por defecto (para pantallas más grandes) */
-.redes-sociales {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Estilos para pantallas más pequeñas (móviles) */
-@media screen and (max-width: 600px) {
-    .redes-sociales {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .redes-sociales a {
-        font-size: 25px; /* Cambiar el tamaño del icono para móviles */
-    }
-
-    .imagen-galeria {
-        width: 100%; /* Las imágenes de la galería se ajustan al 100% del ancho */
-    }
-
-    .galeria-contenido {
-        flex-direction: column; /* Las imágenes de la galería se apilan verticalmente */
-        align-items: center; /* Centra las imágenes */
-    }
-
-    .seccion-titulo {
-        font-size: 1.5rem; /* Ajusta el tamaño del título en secciones */
-    }
-
-    header .salon-titulo {
-        font-size: 1.5rem; /* Ajusta el tamaño del título del salón */
-    }
-
-    nav ul {
-        flex-direction: column; /* Cambia la dirección del menú para pantallas pequeñas */
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Reduce el espacio entre los botones del menú */
-    }
-
-    footer {
-        position: static; /* Hace que el pie de página fluya con el contenido */
-        padding: 10px; /* Ajusta el espaciado del pie de página */
-    }
-}
-
