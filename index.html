@@ -3,100 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Salón de Belleza Susana - Cuida tu imagen con servicios de lujo. Ofrecemos cortes de cabello, peinados, manicure, pedicure y más.">
-    <meta name="keywords" content="salón de belleza, cortes de cabello, peinados, manicure, pedicure, belleza, cuidado personal">
-    <meta name="author" content="Salón de Belleza Susana">
-    <title>Salón de Belleza Susana</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SALON SUSANA BELLEZA Y SPA</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Encabezado con logo y navegación -->
     <header>
-        <div class="logo">
-            <h1 class="salon-titulo">SALÓN SUSANA BELLEZA & SPA</h1>
-        </div>
-        <nav class="menu">
+        <nav>
             <ul>
-                <li><button onclick="mostrarSeccion('galeria')">Galería</button></li>
-                <li><button onclick="mostrarSeccion('ubicacion')">Ubicación</button></li>
-                <li><button onclick="mostrarSeccion('consejos')">Consejos</button></li>
-                <li><button onclick="mostrarSeccion('promociones')">Promociones</button></li>
-                <li><button onclick="mostrarSeccion('gerente')">Gerente</button></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Información</a></li>
+                <li><a href="#productos">Galeria</a></li>
+                <li><a href="#ubicación">Ubicación</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>BIENVENIDO AL SALON SUSANA BELLEZA & SPA</h1>
+            <p>Una experiencia inolvidable</p>
+        </div>
     </header>
 
-    <!-- Sección de Galería de Imágenes -->
-    <section id="galeria" class="seccion">
-        <h2 class="seccion-titulo">Servicios</h2>
-        <article class="galeria-contenido">
-            <div class="imagen-item">
-                <img src="img/ft 1.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
-                <img src="img/ft 2.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
-                <img src="img/ft 5.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
-                <img src="img/ft 6.jpeg" alt="Corte de cabello moderno" class="imagen-galeria">
-                <img src="img/file (1).jpg" alt="Corte de cabello moderno" class="imagen-galeria">
-                <img src="img/file.jpg" alt="Corte de cabello moderno" class="imagen-galeria">
+    <section id="nosotros">
+        <h2>INFROMACIÓN</h2>
+        <p>Bienvenidos al Salón de Belleza Susana, un espacio en el corazón de San Germán donde la belleza y el bienestar se encuentran. Aquí, cada detalle está diseñado para ofrecerte una experiencia única que realza tu estilo y refuerza tu confianza. Con servicios que van desde cortes de cabello y peinados innovadores, hasta tratamientos faciales y corporales, cada visita es una oportunidad para cuidarte y consentirte.
+
+         Bajo la dirección de Susana, una apasionada profesional y madre de dos hijos, nuestro salón se distingue por su atención personalizada y un ambiente cálido que te hará sentir como en casa. Nos esforzamos por brindarte lo mejor en calidad y cuidado, con el compromiso de superar tus expectativas y hacer de cada momento, un verdadero lujo. 
+         
+         ¡Descubre la diferencia y déjate mimar por nosotros!</p>
+    </section>
+
+    <section id="productos">
+        <h2>GALERIA</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="img/ft 1.jpeg" alt="Cesta grande">
+                <h3>Maquillajes</h3>
                 <p>Maquillajes para todo tipo de eventos como fiestas, desfiles, danzas folklorica y hasta disfraces.</p>
             </div>
-            <div class="imagen-item">
-                <img src="img/p 1.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
-                <img src="img/p 2.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
-                <img src="img/p 3.jpeg" alt="Peinados para ocasiones especiales" class="imagen-galeria">
+            <div class="producto">
+                <img src="img/p 3.jpeg" alt="Canasta de frutas">
+                <h3>Peinados</h3>
                 <p>Peinados para ocasiones especiales</p>
             </div>
-            <div class="imagen-item">
-                <img src="img/m1.jpeg" alt="Manicure y pedicure" class="imagen-galeria">
+            <div class="producto">
+                <img src="img/m1.jpeg" alt="Cesto de ropa">
+                <h3>Cuidado de uñas</h3>
                 <p>Manicure y pedicure profesional</p>
             </div>
-          </article>
-    </section>
-
-    <!-- Sección de Ubicación -->
-    <section id="ubicacion" class="seccion">
-        <h2 class="seccion-titulo">Ubicación</h2>
-        <p>Visítanos en la comunidad de San Germán, frente a la Unidad Educativa Don Bosco 1 Nivel Primario</p>
-        <div class="mapa">
-            <img src="img/titulo.jpeg" alt="mapa">
         </div>
     </section>
 
-    <!-- Sección de Consejos de Cuidado Personal -->
-    <section id="consejos" class="seccion">
-        <h2 class="seccion-titulo">Cuidado Personal</h2>
-        <article>
-            <ul class="lista-consejos">
-                <li>Hidrata tu piel con cremas sin alcohol.</li>
-                <li>Usa protector solar con un mínimo de SPF 30 diariamente.</li>
-                <li>Aplica mascarillas hidratantes para tu cabello cada semana.</li>
-                <li>Evita el uso de calor extremo en tu cabello, como planchas y secadores.</li>
+    <section id="ubicación">
+            <h4>UBICACIÓN</h4>
+            <p>Salón de Belleza Susana</p>
+            <p>Visítanos en la comunidad de San Germán, frente a la Unidad Educativa Don Bosco 1 Nivel Primario</p>
+    </section>
+
+    <footer style="background-color: #f7135f; padding: 20px; text-align: center; font-size: 14px;">
+        <div class="footer-content" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+          <!-- Promociones -->
+          <div class="footer-section" style="flex: 1; min-width: 200px; margin: 10px;">
+            <h4>Promociones</h4>
+            <ul>
+              <li>Descuento del 20% en tu primer corte de cabello</li>
+              <li>Paquete de manicura y pedicura a un precio especial</li>
+              <li>2x1 en tratamientos faciales este mes</li>
             </ul>
-        </article>
-    </section>
-
-    <!-- Sección de Promociones -->
-    <section id="promociones" class="seccion">
-        <h2 class="seccion-titulo">Promociones</h2>
-        <div id="promo" class="promo-contenido"></div>
-        <button class="boton-promocion" onclick="mostrarPromocion()">Ver Promociones</button>
-    </section>
-
-    <!-- Sección de Gerente -->
-    <section id="gerente" class="seccion">
-        <h2 class="seccion-titulo">Gerente del Salón</h2>
-        <div class="gerente-contenedor">
-            <article class="gerente-info">
-                <p>Susana Martínez es la gerente y fundadora del Salón de Belleza Susana.</p>
-                <p>Con más de años de experiencia en el sector de la belleza, se ha destacado por brindar servicios personalizados y de calidad a cada cliente.</p>
-            </article>
-            <div class="gerente-imagen">
-                <img src="img/gerente.jpeg" alt="Gerente del salón Susana Martínez">
-            </div>
+          </div>
+          
+          <!-- Consejos -->
+          <div class="footer-section" style="flex: 1; min-width: 200px; margin: 10px;">
+            <h4>Consejos</h4>
+            <ul>
+              <li>No olvides hidratar tu cabello después de cada tratamiento.</li>
+              <li>Visita regularmente el salón para mantener tu piel en su mejor estado.</li>
+              <li>Pregunta por nuestros servicios especiales para ocasiones especiales.</li>
+            </ul>
+          </div>
         </div>
-    </section>    
+    </footer>
 
-    <!-- Pie de página -->
     <footer>
+        
         <div class="redes-sociales">
             <a href="https://wa.me/59167778491" target="_blank" class="whatsapp">
                 <img src="img/whatsapp.png" alt="WhatsApp">
@@ -111,12 +98,20 @@
                 <img src="img/instagram.png" alt="Instagram">
             </a>
         </div>
+        
+        <p>&copy; 2024 SALON SUSANA BELLEZA & SPA</p>
     </footer>
-    
-    <!-- Archivo de JavaScript -->
-    <script src="script.js"></script>
+
+    <script>
+        // JavaScript para funcionalidades adicionales
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por contactarnos. Responderemos a la brevedad.');
+        });
+    </script>
 </body>
 </html>
+
 
     
   
